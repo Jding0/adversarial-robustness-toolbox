@@ -2,6 +2,7 @@
 exit_code=0
 
 # attacks
+
 python -m unittest 'tests/attacks/test_adversarial_patch.py'
 if [[ $? -ne 0 ]]; then exit_code=1; echo 'Failed test_adversarial_patch.py'; fi
 
